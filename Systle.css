@@ -1,0 +1,23 @@
+
+h1 {
+text-align: center;
+background-color: rgb(106, 232, 123);
+color: black;
+font-size: 30px;
+ padding-left: 50px; 
+ margin-left: 400px;
+width: 500px;
+border: solid 3px rgb(207, 21, 227);
+border-radius: 30px;
+}
+p {
+text-align: center;
+background-color: rgb(106, 232, 123);
+color: black;
+font-size: 30px;
+ padding-left: 50px; 
+ margin-left: 400px;
+width: 500px;
+border: solid 3px rgb(207, 21, 227);
+border-radius: 30px;
+}

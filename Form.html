@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(white,skyblue,pink);
+            background-repeat: no-repeat;
+        }
+        .container{
+            margin:auto;
+            width: 20%;
+            border: 3px solid #000000;
+            padding: 30px;
+        }
+        .form
+        {
+            padding: 8px;
+        }
+        .sub{
+            padding: 15px;
+            border-radius: 8px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Web Form</h1>
+    <div class="container">
+        <form action="HtmlTry.html" onsubmit="validation">
+        <label>FirstName:</label>
+        <input type="text" id="FirstName" class="form" placeholder="FirstName"><br/><br/>
+        <span id="FirstName"></span>
+        <label>LastName:</label>
+        <input type="text" id="LastName" class="form" placeholder="LastName"><br/><br/>
+        <span id="LastName"></span>
+        <label>Email:</label>
+        <input type="email" id="email" class="form" placeholder="email"><br/><br/>
+        <span id="email"></span>
+        <label>Password:</label>
+        <input type="password" id="password" class="form" placeholder="password"><br/><br/>
+        <span id="password"></span>
+        <label>Birth_Day:</label>
+        <input type="date" id="date" class="form" placeholder="date"><br/><br/>
+        <span id="Birth_Day"></span>
+        <p>Gender</p>
+        <input type="radio" id="male" name="radio">
+        <label>male</label>
+        <input type="radio" id="Female" name="radio">
+        <label>Female</label>
+        <p>Social Media</p>
+        <input type ="checkbox" id="linkedin" name="check">
+        <label>linkedin</label>
+        <input type ="checkbox" id="Instagram" name="check">
+        <label>Instagram</label>
+        <input type ="checkbox" id="twitter" name="check">
+        <label>twitter</label>
+        <label>Upload Resume</label>
+        <input type="file"><br/>
+        <input type="submit" class="sub" id="submit"></form>
+
+        
+
+
+    </div>
+    <script>
+        function validation(){
+            var FirstName=document.getElementById('FirstName').value;
+            var LastName=document.getElementById('LastName').value;
+            var Email=document.getElementById('Email').value;
+            var password=document.getElementById('password').value;
+            var Birth_Day=document.getElementById('Birth_Day').value;
+            if(FirstName=="")
+            document.getElementById('Firstname').innerHTML="Name can not be Blank";
+            if(LastName=="")
+            document.getElementById('LastName').innerHTML="Name can not be Blank";
+        }
+    </script>
+</body>
+</html>
